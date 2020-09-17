@@ -39,5 +39,6 @@ jobs:
         
         
       - name: deploying using surge
-        run: surge ./build reactappbulid.surge.sh --token "5e492d341500585a0c2ad5ab9edd2911"
-        # ${{ secrets.SURGE_TOKEN }}
+        run: surge ./build reactappbulid.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+        #  "5e492d341500585a0c2ad5ab9edd2911"
+        
