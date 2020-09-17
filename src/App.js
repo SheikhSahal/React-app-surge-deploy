@@ -14,7 +14,7 @@ function App() {
       <div>
         <Wed names={nam.name} behavior={nam.behave}/>
       </div>
-        <button onClick={()=> {setname({name: 'Sahal tooba', behave: 'After'})}}>Update name</button>
+        <button onClick={()=> {setname({name: 'Tooba sahal', behave: 'After'})}}>Update name</button>
     </div>
   );
 }
