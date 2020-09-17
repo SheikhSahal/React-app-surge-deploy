@@ -39,4 +39,4 @@ jobs:
         
         
       - name: deploying using surge
-        run: surge ./build reactappbulid.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+        run: surge ./build sahal.surge.sh --token ${{ secrets.SURGE_TOKEN }}
