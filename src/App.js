@@ -1,24 +1,20 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import './App.css';
-import Parent from './Context_API/Parent';
-import Context from './Context_API/Context';
-import ReducerParent from './Reducer/Parent';
-
+import Wed from './wed/wed'
 
 function App() {
-  const setCounter = useState(25);
+  const [nam, setname] = useState({
+    name : 'Tooba',
+    behave: 'Before'
+  })
+  
 
   return (
     <div className="App">
-    <Context.Provider value={setCounter}>
-      <Parent />
-    </Context.Provider>
-
-
-    <ReducerParent>
-
-    </ReducerParent>
-
+      <div>
+        <Wed names={nam.name} behavior={nam.behave}/>
+      </div>
+        <button onClick={()=> {setname({name: 'Tooba sahal', behave: 'After'})}}>Update name</button>
     </div>
   );
 }
